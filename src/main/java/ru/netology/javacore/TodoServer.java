@@ -39,7 +39,7 @@ public class TodoServer {
                     todos.addTask(task.getTask());
                     System.out.println(todos.getAllTasks());
                     out.println(todos.getAllTasks());
-                } else if (task.getTask().equals("REMOVE")) {
+                } else if (task.getType().equals("REMOVE")) {
                     todos.removeTask(task.getTask());
                     out.println(todos.getAllTasks());
                     System.out.println(todos.getAllTasks());
